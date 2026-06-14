@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,4 +104,111 @@ rel="stylesheet">
   <script src="script.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-box">
+        <h4 id="welcomeText">
+  Welcome 👋
+</h4>
+      <div class="top-bar">
+  <h2>Task Manager</h2>
+
+  <button id="logoutBtn">
+    Logout
+  </button>
+</div>
+
+<div class="stats-container">
+
+  <div class="stat-card">
+    <h3 id="totalTasks">
+      0
+    </h3>
+    <p>Total Tasks</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="completedTasks">
+      0
+    </h3>
+    <p>Completed</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="pendingTasks">
+      0
+    </h3>
+    <p>Pending</p>
+  </div>
+
+</div>
+
+      <form id="taskForm">
+        <input
+          type="text"
+          id="title"
+          placeholder="Task Title"
+          required
+        />
+
+        <input
+          type="text"
+          id="description"
+          placeholder="Task Description"
+          required
+        />
+
+        <input
+          type="date"
+          id="dueDate"
+          required
+        />
+
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">
+            Medium
+          </option>
+          <option value="High">
+            High
+          </option>
+        </select>
+
+        <button type="submit">
+          Add Task
+        </button>
+      </form>
+      <input
+  type="text"
+  id="searchTask"
+  placeholder="🔍 Search Task"
+/>
+      <h3>Your Tasks</h3>
+
+      <div id="taskList"></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+>>>>>>> bb1c0212e182a1ef965ebdb7d618d48e8a3cab28
 </html>
